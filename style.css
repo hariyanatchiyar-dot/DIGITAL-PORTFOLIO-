@@ -131,13 +131,14 @@ body{
   align-items: center;     /* vertical center (if needed) */
   margin: 20px 0;          /* space top & bottom */
 }
-
 .profile-pic img {
-  width: 80px;       
-  height: 80px;
-  object-fit: cover;  /* neatly fit inside circle */
-  border-radius: 50%; /* circle shape */
-  border: 4px solid #E4B381; /* sandal color border */
+  width: 120px !important;   /* force size */
+  height: 120px !important;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #E4B381; /* sandal border */
+  display: block;            /* extra safety */
+  margin: 0 auto;            /* center align if flex fail */
 }
 @media(max-width:80px){.about-text{text-align:center}}
 
