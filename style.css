@@ -127,20 +127,19 @@ body{
 /* Profile photo design */
 .profile-pic {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0; /* top & bottom space */
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center (if needed) */
+  margin: 20px 0;          /* space top & bottom */
 }
 
 .profile-pic img {
-  width: 40px;          /* image size */
-  height: 40px;
-  object-fit: cover;     /* crop and fit inside circle */
-  border-radius: 50%;    /* make it round */
-  border: 5px solid #E4B381; /* sandalwood color border */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* optional shadow */
+  width: 80px;       
+  height: 80px;
+  object-fit: cover;  /* neatly fit inside circle */
+  border-radius: 50%; /* circle shape */
+  border: 4px solid #E4B381; /* sandal color border */
 }
-@media(max-width:720px){.about-text{text-align:center}}
+@media(max-width:80px){.about-text{text-align:center}}
 
 /* Grids (cards) */
 
