@@ -122,12 +122,24 @@ body{
 
 /* About layout */
 
-.about-grid{display:flex;gap:20px;align-items:center;flex-wrap:wrap;justify-content:center}
-
-.profile-pic{width:160px;height:160px;border-radius:50%;object-fit:cover;border:6px solid #EEDC82;box-shadow:8px 10px 20px rgba(0,0,0,0.12)}
-
+.about-grid{display:flex;gap:20px;align-items:
 .about-text{max-width:680px;text-align:left}
+/* Profile photo design */
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0; /* top & bottom space */
+}
 
+.profile-pic img {
+  width: 180px;          /* image size */
+  height: 180px;
+  object-fit: cover;     /* crop and fit inside circle */
+  border-radius: 50%;    /* make it round */
+  border: 5px solid #E4B381; /* sandalwood color border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* optional shadow */
+}
 @media(max-width:720px){.about-text{text-align:center}}
 
 /* Grids (cards) */
